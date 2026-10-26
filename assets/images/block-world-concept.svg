@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Original block-world concept art">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#172522"/>
+      <stop offset="1" stop-color="#101615"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#9bc4a4" stroke-opacity=".09"/>
+    </pattern>
+    <g id="grass-block" stroke="#18231d" stroke-width="2" stroke-linejoin="round">
+      <path d="M0 24 56 0l56 24-56 24Z" fill="#6e9e69"/>
+      <path d="M0 24 56 48v50L0 74Z" fill="#6d5945"/>
+      <path d="m56 48 56-24v50L56 98Z" fill="#473d32"/>
+      <path d="M0 24 56 48v13L0 37Zm56 24 56-24v13L56 61Z" fill="#4f7f53" stroke="none"/>
+      <path d="m15 28 11 5v7l-11-5Zm24 11 9 4v6l-9-4Zm35 10 10-4v8l-10 4Zm23-10 8-3v8l-8 3Z" fill="#78a96d" stroke="none" opacity=".8"/>
+      <path d="m16 50 12 5v11l-12-5Zm63 23 13-6v11l-13 6Z" fill="#9b7751" stroke="none" opacity=".65"/>
+    </g>
+    <g id="stone-block" stroke="#1d292e" stroke-width="2" stroke-linejoin="round">
+      <path d="M0 24 56 0l56 24-56 24Z" fill="#77877e"/>
+      <path d="M0 24 56 48v50L0 74Z" fill="#586a63"/>
+      <path d="m56 48 56-24v50L56 98Z" fill="#3d504b"/>
+      <path d="m17 39 12 5v8l-12-5Zm23 29 9 4v9l-9-4Zm38-33 14-6v10l-14 6Zm8 28 14-6v9l-14 6Z" fill="#91a49a" stroke="none" opacity=".45"/>
+    </g>
+  </defs>
+  <rect width="1200" height="360" fill="url(#sky)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+  <path d="M0 272q148-25 279-3t244-11 263 4 414-35v133H0Z" fill="#1f332b" opacity=".7"/>
+  <g opacity=".7">
+    <rect x="403" y="83" width="12" height="12" fill="#8bae86"/>
+    <rect x="766" y="45" width="8" height="8" fill="#9ac58e"/>
+    <rect x="1020" y="109" width="11" height="11" fill="#7eaa79"/>
+    <rect x="1120" y="56" width="6" height="6" fill="#b0cda4"/>
+    <rect x="533" y="38" width="6" height="6" fill="#8ca786"/>
+  </g>
+  <g opacity=".55"><use href="#stone-block" x="310" y="224" width="112" height="98"/><use href="#stone-block" x="422" y="246" width="112" height="98"/></g>
+  <g opacity=".95">
+    <use href="#grass-block" x="512" y="202" width="112" height="98"/>
+    <use href="#grass-block" x="624" y="226" width="112" height="98"/>
+    <use href="#stone-block" x="736" y="202" width="112" height="98"/>
+    <use href="#grass-block" x="848" y="225" width="112" height="98"/>
+    <use href="#stone-block" x="960" y="203" width="112" height="98"/>
+    <use href="#grass-block" x="624" y="128" width="112" height="98"/>
+    <use href="#grass-block" x="736" y="104" width="112" height="98"/>
+    <use href="#stone-block" x="848" y="129" width="112" height="98"/>
+    <use href="#grass-block" x="736" y="30" width="112" height="98"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Stylized Firebase flame">
+  <path d="M12 46 21 7l11 16 6-12 15 36-21 11Z" fill="#f57c00"/>
+  <path d="M12 46 21 7l11 16-14 29Z" fill="#ffca28"/>
+  <path d="m18 52 14-29 6-12 15 36-21 11Z" fill="#ff9100"/>
+  <path d="m18 52 14-29 21 24-21 11Z" fill="#ffb300"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 470" role="img" aria-labelledby="title description">
+  <title id="title">Breathe Easy inquiry form protection</title>
+  <desc id="description">Quotation, product, and contact forms lead through field validation and submission limits before an inquiry reaches the team.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#152c31"/><stop offset="1" stop-color="#0b181c"/></linearGradient></defs>
+  <rect width="660" height="470" rx="20" fill="url(#bg)"/>
+  <g fill="none" stroke="#35545a" opacity=".55"><path d="M0 60h660M0 120h660M0 180h660M0 240h660M0 300h660M0 360h660M0 420h660M60 0v470M120 0v470M180 0v470M240 0v470M300 0v470M360 0v470M420 0v470M480 0v470M540 0v470M600 0v470"/></g>
+  <text x="32" y="43" fill="#b7ded5" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="2">PUBLIC INQUIRY FORMS</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <rect x="25" y="90" width="190" height="98" rx="15" fill="#e9f5f0"/>
+    <text x="120" y="129" fill="#24545a" font-size="17" font-weight="700">Quotation</text><text x="120" y="157" fill="#5b7475" font-size="14">Request form</text>
+    <rect x="235" y="90" width="190" height="98" rx="15" fill="#e9f5f0"/>
+    <text x="330" y="129" fill="#24545a" font-size="17" font-weight="700">Products</text><text x="330" y="157" fill="#5b7475" font-size="14">Inquiry form</text>
+    <rect x="445" y="90" width="190" height="98" rx="15" fill="#e9f5f0"/>
+    <text x="540" y="129" fill="#24545a" font-size="17" font-weight="700">Contact</text><text x="540" y="157" fill="#5b7475" font-size="14">Message form</text>
+    <path d="M120 188v33m210-33v33m210-33v33M120 221h420M330 221v23" fill="none" stroke="#80c5b6" stroke-width="3" stroke-linecap="round"/>
+    <rect x="70" y="245" width="520" height="103" rx="16" fill="#f6e5cb" stroke="#e7aa70" stroke-width="3"/>
+    <text x="330" y="284" fill="#7a4d30" font-size="15" font-weight="700">ANTI-SPAM SAFEGUARDS</text>
+    <text x="330" y="316" fill="#41392e" font-size="20" font-weight="700">Field validation + submission limits</text>
+    <path d="M330 348v29" fill="none" stroke="#80c5b6" stroke-width="3" stroke-linecap="round"/>
+    <rect x="170" y="378" width="320" height="62" rx="15" fill="#cce8df"/>
+    <text x="330" y="416" fill="#1c464b" font-size="20" font-weight="700">Customer inquiries</text>
+  </g>
+</svg>
