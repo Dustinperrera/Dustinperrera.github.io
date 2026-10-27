@@ -66,13 +66,13 @@ const projectNotes = {
     ]
   },
   sneakdup: {
-    title: 'SneakDup', category: 'FREELANCE WEBSITE', state: 'LIVE PROJECT · HOSTED ON VERCEL',
+    title: 'SneakDup', category: 'FREELANCE WEBSITE', state: 'CLIENT PROJECT · LIVE WEBSITE',
     summary: 'A shoe store website that connects a customer-facing catalog with staff tools for daily retail operations.',
     description: 'Customers can browse shoes and check available stock, sizes, and variants. Authorized staff have a separate login for the POS, inventory management, sales analytics, and other store functions. The gallery shows both the customer-facing shop and staff tools.',
     role: 'Web Developer',
     tools: ['HTML', 'CSS', 'JavaScript', 'PHP', 'SQL', 'XAMPP', 'Hostinger', 'API integration'],
     live: 'https://sneakdup-eight.vercel.app/',
-    extra: 'The live website and screenshots show the customer-facing catalog and staff interfaces.',
+    extra: 'The live link opens the customer-facing SneakDup website. Staff tools are presented through project screenshots; the database walkthrough uses fictional sample data.',
     highlights: ['Shoe catalog with stock, size, and variant visibility', 'Separate admin and staff access', 'Point-of-sale and inventory tools', 'Sales analytics for store operations'],
     gallery: [
       { title: 'Catalog', caption: 'Customer-facing shoe and apparel catalog.', src: 'assets/images/sneakdup-catalog.png' },
@@ -83,24 +83,28 @@ const projectNotes = {
     ]
   },
   mobile: {
-    title: 'DCSA Mini LMS', category: 'MOBILE APPLICATION', state: 'PROJECT BUILT · DEMO PENDING',
+    title: 'DCSA Mini LMS', category: 'MOBILE APPLICATION', state: 'ANDROID APK AVAILABLE · LIVE DEMO PENDING',
     summary: 'A mobile learning app with separate experiences for students and teachers.',
-    description: 'The app supports student and teacher logins, lesson and PDF learning materials, and quizzes that teachers create and students take. It was built with Kotlin in Android Studio, with Firebase as its database and an API integration. The gallery shows its login and registration screens.',
+    description: 'The app supports student and teacher logins, lesson and PDF learning materials, and quizzes that teachers create and students take. It was built with Kotlin in Android Studio, with Firebase as its database and an API integration. The gallery shows the available login and registration screens, followed by four separately labeled AI-generated concept screens for the student dashboard, quiz, grades, and teacher lesson creation.',
     role: 'Mobile App Developer', tools: ['Android Studio', 'Kotlin', 'Firebase', 'API integration'],
-    extra: 'Evidence currently includes the login and registration screenshots. The app is not available as a public browser demo or downloadable APK here.',
+    extra: 'The login and registration images are the available app screens. The dashboard, quiz, grades, and teacher lesson screens are AI-generated concepts, not captures of the working app. The attached APK is a debug build; login may depend on the original backend configuration and may not work in a fresh install. No public browser demo is available.',
     highlights: ['Separate student and teacher login flows', 'Teacher quiz creation and student quiz taking', 'Lessons and PDF learning materials'],
     gallery: [
       { title: 'Login', caption: 'DCSA Mini LMS login screen with email and password entry.', src: 'assets/images/dcsa-login.jpg' },
-      { title: 'Register', caption: 'Account registration screen with student and teacher role selection.', src: 'assets/images/dcsa-register.jpg' }
+      { title: 'Register', caption: 'Account registration screen with student and teacher role selection.', src: 'assets/images/dcsa-register.jpg' },
+      { title: 'Student dashboard · concept', caption: 'AI-generated concept screen aligned to the app theme; illustrative only, not captured from the working app.', src: 'assets/images/dcsa-student-dashboard-concept.png', concept: true },
+      { title: 'Student quiz · concept', caption: 'AI-generated concept screen aligned to the app theme; illustrative only, not captured from the working app.', src: 'assets/images/dcsa-student-quiz-concept.png', concept: true },
+      { title: 'Student grades · concept', caption: 'AI-generated concept screen aligned to the app theme; illustrative only, not captured from the working app.', src: 'assets/images/dcsa-student-grades-concept.png', concept: true },
+      { title: 'Teacher lesson creation · concept', caption: 'AI-generated concept screen aligned to the app theme; illustrative only, not captured from the working app.', src: 'assets/images/dcsa-teacher-lesson-concept.png', concept: true }
     ]
   },
   data: {
-    title: 'Making sense of data', category: 'DATA ANALYSIS', state: 'EXCEL PROJECT BUILT · SQL WORK PLANNED',
-    summary: 'An existing Excel analysis, with a planned SQL demonstration focused on data quality.',
-    description: 'The next step is to use MySQL and phpMyAdmin to check duplicate records, missing values, and inconsistent entries. The finished case study will explain each query, its result, and what the result means.',
-    role: 'Analysis and planned SQL validation', tools: ['Excel', 'MySQL / phpMyAdmin (planned)'],
-    extra: 'The workbook, findings, SQL outputs, and verified corrections are still to be added.',
-    highlights: ['Excel analysis already exists', 'Duplicate checks using GROUP BY, COUNT, and HAVING (planned)', 'Missing-value and consistency checks (planned)'],
+    title: 'SneakDup database practice', category: 'DATABASE PRACTICE · SNEAKDUP', state: 'ILLUSTRATIVE SQL WALKTHROUGH',
+    summary: 'A visual walkthrough of SQL checks for duplicate shoe variants, missing details, and stock values that need review.',
+    description: 'This focused walkthrough demonstrates the kind of data-quality checks used with SneakDup product variants. It presents the SQL, fictional example findings, and what each check is intended to catch.',
+    role: 'Database quality review walkthrough', tools: ['MySQL / phpMyAdmin (planned)'],
+    extra: 'Illustrative portfolio demo only. It uses fictional sample rows and does not connect to or change SneakDup live data.',
+    highlights: ['Find repeated product, size, and color combinations', 'Identify variants missing key details', 'Flag negative or missing stock values'],
     gallery: [
       { title: 'Workbook', caption: 'Add the actual worksheet or dashboard screenshot.', src: '' },
       { title: 'Checks', caption: 'Add a screenshot of a completed SQL quality check.', src: '' },
@@ -145,8 +149,8 @@ const completedProjectDetails = {
     "problem": "A shoe retail system needs to present products clearly to customers while giving staff a way to handle stock, transactions, and sales information.",
     "contribution": "As the web developer, I built the customer catalog and staff tools for point-of-sale transactions, inventory management, and sales reporting.",
     "approach": "I used HTML, CSS, JavaScript, PHP, and SQL to connect the storefront with stock, size, and variant information and separate staff workflows.",
-    "challenge": "The project connects two workflows: customers browsing products and staff managing store operations. The customer-facing storefront is live; staff tools are shown through screenshots.",
-    "evidence": "Five actual screenshots show the catalog, product details, POS, inventory, and sales analytics. The customer-facing storefront is live; staff tools are documented with screenshots."
+    "challenge": "The project connects customer product browsing with staff operations. The public link demonstrates the customer-facing site; staff tools are documented with screenshots.",
+    "evidence": "The live link opens the customer-facing SneakDup website. Five screenshots show the catalog, product details, POS, inventory, and sales analytics. The separate SQL walkthrough uses fictional sample rows and does not connect to the live database."
   },
   "mobile": {
     "problem": "Students and teachers need different tools in a learning app: teachers prepare materials and quizzes, while students access lessons and complete activities.",
@@ -229,159 +233,11 @@ function projectElement(tag, className, text) {
   if (text !== undefined) element.textContent = text;
   return element;
 }
-function createDataQualityLab() {
-  const lab = projectElement('section', 'case-data-lab');
-  lab.setAttribute('aria-labelledby', 'data-lab-title');
-  const header = projectElement('div', 'data-lab-header');
-  const intro = projectElement('div');
-  intro.append(
-    projectElement('span', 'small-label', 'DATABASE PRACTICE / INTERACTIVE SAMPLE'),
-    Object.assign(projectElement('h3', '', 'Data quality check'), { id: 'data-lab-title' }),
-    projectElement('p', '', 'A visual walkthrough of how SQL can flag product-variant records for review.')
-  );
-  const run = projectElement('button', 'audit-run button secondary', 'Run sample scan');
-  run.type = 'button';
-  run.setAttribute('aria-describedby', 'audit-status');
-  header.append(intro, run);
-
-  const status = projectElement('p', 'audit-status', 'Ready · sample records only');
-  status.id = 'audit-status';
-  status.setAttribute('role', 'status');
-  const stats = projectElement('div', 'audit-stats');
-  [
-    ['12', 'sample variants scanned'],
-    ['5', 'SQL checks available'],
-    ['8', 'findings to review']
-  ].forEach(([value, label]) => {
-    const card = projectElement('div', 'audit-stat');
-    card.append(projectElement('strong', '', value), projectElement('span', '', label));
-    stats.append(card);
-  });
-
-  const main = projectElement('div', 'audit-main');
-  const chart = projectElement('div', 'audit-chart');
-  chart.append(projectElement('span', 'small-label', 'SAMPLE FINDINGS'));
-  [
-    ['Duplicate variant rows', 4, 100],
-    ['Missing size', 1, 25],
-    ['Negative stock', 1, 25],
-    ['Orphaned variant', 1, 25],
-    ['Product without variants', 1, 25]
-  ].forEach(([label, count, width]) => {
-    const row = projectElement('div', 'audit-chart-row');
-    const top = projectElement('div', 'audit-chart-label');
-    top.append(projectElement('span', '', label), projectElement('strong', '', String(count)));
-    const track = projectElement('div', 'audit-chart-track');
-    track.setAttribute('aria-hidden', 'true');
-    const bar = projectElement('span', 'audit-chart-bar');
-    bar.dataset.width = String(width);
-    track.append(bar);
-    row.append(top, track);
-    chart.append(row);
-  });
-  chart.append(projectElement('p', 'audit-chart-note', 'Counts come from fictional sample records, not a live database.'));
-
-  const results = projectElement('div', 'audit-results');
-  results.append(projectElement('span', 'small-label', 'FLAGGED SAMPLE ROWS'));
-  const tableWrap = projectElement('div', 'audit-table-wrap');
-  const table = document.createElement('table');
-  table.className = 'audit-table';
-  table.innerHTML = '<thead><tr><th>Row</th><th>Product</th><th>Size</th><th>Color</th><th>Stock</th><th>Finding</th></tr></thead><tbody></tbody>';
-  const rows = [
-    ['101', '18', '9.5', 'Black', '5', 'Duplicate pair'],
-    ['102', '18', '9.5', 'Black', '5', 'Duplicate pair'],
-    ['103', '19', '9', 'Black', '4', 'Duplicate pair'],
-    ['104', '19', '9', 'Black', '4', 'Duplicate pair'],
-    ['111', '34', '—', 'Blue', '5', 'Missing size'],
-    ['110', '25', '9', 'Blue', '-1', 'Review stock'],
-    ['112', '99', '9.5', 'White', '3', 'Orphan product'],
-    ['—', '77', '—', '—', '—', 'No variants']
-  ];
-  const tbody = table.querySelector('tbody');
-  rows.forEach(values => {
-    const tr = document.createElement('tr');
-    values.forEach((value, index) => {
-      const cell = document.createElement('td');
-      if (index === 5) cell.append(projectElement('span', 'audit-flag', value));
-      else cell.textContent = value;
-      tr.append(cell);
-    });
-    tbody.append(tr);
-  });
-  tableWrap.append(table);
-  results.append(tableWrap);
-  main.append(chart, results);
-
-  const queries = projectElement('div', 'audit-queries');
-  queries.append(projectElement('span', 'small-label', 'SQL BEHIND THE CHECKS'));
-  const queryStatus = projectElement('span', 'audit-copy-status');
-  queryStatus.setAttribute('role', 'status');
-  queryStatus.setAttribute('aria-live', 'polite');
-  queries.append(queryStatus);
-  [
-    ['01 · Find repeated product, size, and color combinations', 'SELECT product_id, size, color, COUNT(*) AS matches\nFROM product_variants\nGROUP BY product_id, size, color\nHAVING COUNT(*) > 1;', 'Groups identical product variants so repeated combinations can be reviewed.'],
-    ['02 · Find variants missing key details', 'SELECT id, product_id, size, color\nFROM product_variants\nWHERE product_id IS NULL OR size IS NULL OR color IS NULL;', 'Finds variant rows that may not have enough information to identify what is in stock.'],
-    ['03 · Flag stock values that need review', 'SELECT id, product_id, size, color, stock\nFROM product_variants\nWHERE stock < 0;', 'Highlights negative stock quantities for a person to check.'],
-    ['04 · Find variants linked to a missing product', 'SELECT pv.id, pv.product_id\nFROM product_variants AS pv\nLEFT JOIN products AS p ON p.id = pv.product_id\nWHERE p.id IS NULL;', 'Uses a LEFT JOIN to find variant records without a matching product.'],
-    ['05 · Find products with no variants', 'SELECT p.id, p.name\nFROM products AS p\nLEFT JOIN product_variants AS pv ON pv.product_id = p.id\nWHERE pv.id IS NULL;', 'Finds catalog products that do not have any size or color variant rows.']
-  ].forEach(([label, query, explanation], index) => {
-    const details = projectElement('details', 'audit-query');
-    if (index === 0) details.open = true;
-    const summary = projectElement('summary', '', label);
-    details.append(summary);
-    const body = projectElement('div', 'audit-query-body');
-    body.append(projectElement('p', 'audit-query-explainer', explanation));
-    const codeRow = projectElement('div', 'audit-code-row');
-    const pre = projectElement('pre');
-    pre.append(projectElement('code', '', query));
-    const copy = projectElement('button', 'audit-copy', 'Copy SQL');
-    copy.type = 'button';
-    copy.addEventListener('click', async event => {
-      event.preventDefault();
-      event.stopPropagation();
-      try {
-        await navigator.clipboard.writeText(query);
-        queryStatus.textContent = 'SQL copied to clipboard';
-        copy.textContent = 'Copied';
-        window.setTimeout(() => { copy.textContent = 'Copy SQL'; }, 1400);
-      } catch {
-        queryStatus.textContent = 'Clipboard copy is unavailable in this browser';
-      }
-    });
-    codeRow.append(pre, copy);
-    body.append(codeRow);
-    details.append(body);
-    queries.append(details);
-  });
-
-  const note = projectElement('p', 'audit-disclaimer', 'Illustrative demo only. These fictional rows are not loaded from SneakDup’s database, and this page does not run SQL or change any records. A duplicate flag means “review this combination,” not “delete it automatically.”');
-  lab.append(header, status, stats, main, queries, note);
-
-  run.addEventListener('click', event => {
-    event.preventDefault();
-    event.stopPropagation();
-    if (lab.classList.contains('is-scanning')) return;
-    lab.classList.remove('is-scanned');
-    lab.classList.add('is-scanning');
-    run.disabled = true;
-    status.textContent = 'Scanning illustrative sample…';
-    lab.querySelectorAll('.audit-chart-bar').forEach(bar => { bar.style.width = '0%'; });
-    window.setTimeout(() => {
-      lab.classList.remove('is-scanning');
-      lab.classList.add('is-scanned');
-      lab.querySelectorAll('.audit-chart-bar').forEach(bar => { bar.style.width = bar.dataset.width + '%'; });
-      status.textContent = 'Sample scan complete · 2 duplicate groups and 8 findings to review';
-      run.disabled = false;
-    }, 850);
-  });
-  return lab;
-}
-
 function openProject(key) {
   const project = projectNotes[key];
   if (!project) return;
   project.gallery.forEach(item => {
-    if (item.src) {
+    if (item.src && !item.concept) {
       const preview = new Image();
       preview.src = item.src;
     }
@@ -390,6 +246,7 @@ function openProject(key) {
   dialogContent.replaceChildren();
 
   const introduction = projectElement('div', 'case-intro');
+  if (key === 'data') introduction.classList.add('case-intro--database');
   const state = projectElement('span', 'case-state', project.state);
   const summary = projectElement('p', 'case-summary', project.summary);
   const actionRow = projectElement('div', 'case-actions');
@@ -399,17 +256,33 @@ function openProject(key) {
     liveLink.target = '_blank';
     liveLink.rel = 'noopener noreferrer';
     actionRow.append(liveLink);
+  } else if (key === 'data') {
+    actionRow.append(projectElement('span', 'case-link-pending', 'Fictional sample data · no live database connection'));
   } else {
     actionRow.append(projectElement('span', 'case-link-pending', project.linkPending || 'Public link or demo not available yet'));
+  }
+  if (key === 'mobile') {
+    const apkLink = projectElement('a', 'button secondary', 'Download Android APK · 17.2 MB ↓');
+    apkLink.href = 'assets/downloads/dcsa-minilms-debug.apk';
+    apkLink.download = 'DCSA-MiniLMS-debug.apk';
+    actionRow.append(apkLink, projectElement('span', 'case-download-note', 'Debug build · sign-in may depend on the original backend configuration.'));
+  }
+  if (key === 'sneakdup') {
+    const databaseLink = projectElement('button', 'button secondary', 'Explore database practice ↗');
+    databaseLink.type = 'button';
+    databaseLink.addEventListener('click', () => openProject('data'));
+    actionRow.append(databaseLink);
   }
   introduction.append(state, summary, actionRow);
 
   const layout = projectElement('div', 'case-layout');
   const primary = projectElement('div', 'case-primary');
-  const about = projectElement('section', 'case-section');
   const details = completedProjectDetails[key];
-  about.append(projectElement('h3', '', details ? 'The problem' : 'About the project'), projectElement('p', '', details ? details.problem : project.description));
-  primary.append(about);
+  if (key !== 'data') {
+    const about = projectElement('section', 'case-section');
+    about.append(projectElement('h3', '', details ? 'The problem' : 'About the project'), projectElement('p', '', details ? details.problem : project.description));
+    primary.append(about);
+  }
   if (details) {
     const notes = projectElement('div', 'case-study-notes');
     [['My contribution', details.contribution], ['My approach', details.approach], ['Challenges & current limits', details.challenge]].forEach(([heading, copy]) => {
@@ -420,7 +293,7 @@ function openProject(key) {
     primary.append(notes);
   }
 
-  const projectSections = [];
+  if (key !== 'data') {
   const gallery = projectElement('section', 'case-section case-gallery' + (key === 'mobile' ? ' case-gallery--mobile' : ''));
   const galleryTop = projectElement('div', 'gallery-heading');
   galleryTop.append(projectElement('h3', '', 'Project gallery'), projectElement('span', 'gallery-counter'));
@@ -436,6 +309,7 @@ function openProject(key) {
   function showGalleryItem(index) {
     currentIndex = (index + project.gallery.length) % project.gallery.length;
     const item = project.gallery[currentIndex];
+    galleryStage.classList.toggle('gallery-stage--concept', item.concept === true);
     galleryStage.replaceChildren();
     const placeholder = () => {
       const frame = projectElement('div', 'gallery-placeholder gallery-placeholder--' + key);
@@ -447,7 +321,7 @@ function openProject(key) {
       galleryStage.replaceChildren(frame);
     };
     if (item.src) {
-      const image = projectElement('img', 'gallery-image');
+      const image = projectElement('img', item.concept ? 'gallery-image gallery-image--concept' : 'gallery-image');
       image.src = item.src;
       image.alt = item.title + ' — ' + project.title;
       image.addEventListener('error', placeholder, { once: true });
@@ -478,11 +352,248 @@ function openProject(key) {
   galleryControls.append(previous, thumbnails, next);
   gallery.append(galleryTop, galleryStage, galleryCaption);
   if (project.gallery.length > 1) gallery.append(galleryControls);
-  projectSections.push(gallery);
+  primary.append(gallery);
+  }
   if (details) {
     const evidence = projectElement('section', 'case-section case-study-evidence');
     evidence.append(projectElement('h3', '', 'Evidence & project status'), projectElement('p', '', details.evidence));
-    projectSections.push(evidence);
+    primary.append(evidence);
+  }
+
+  if (key === 'data') {
+    const practice = projectElement('section', 'case-section database-practice');
+    practice.id = 'database-practice';
+    practice.append(projectElement('span', 'small-label', 'SNEAKDUP / DATABASE PRACTICE'));
+
+    const workspace = projectElement('div', 'database-workspace');
+    const topbar = projectElement('div', 'database-topbar');
+    topbar.append(
+      projectElement('strong', 'database-brand', 'phpMyAdmin'),
+      projectElement('div', 'database-breadcrumb', 'Server: 127.0.0.1　›　Database: sneakdup_sample'),
+      projectElement('span', 'database-demo-flag', 'FICTIONAL DEMO')
+    );
+
+    const workspaceBody = projectElement('div', 'database-workspace-body');
+    const tree = projectElement('aside', 'database-tree');
+    tree.setAttribute('aria-label', 'Sample database tables');
+    tree.append(projectElement('span', 'database-tree-heading', 'DATABASES'), projectElement('strong', 'database-tree-name', '▾ sneakdup_sample'));
+
+    const sampleTables = {
+      products: {
+        count: 24, columns: ['id', 'name', 'category', 'price', 'status'],
+        rows: [
+          ['18', 'Nike Dunk Low', 'Shoes', '₱999.00', 'Active'],
+          ['19', 'Nike Air Force I', 'Shoes', '₱1,500.00', 'Active'],
+          ['25', 'Adidas Puma Palermo', 'Shoes', '₱1,500.00', 'Active'],
+          ['28', 'Classic Crew Tee', 'Apparel', '₱650.00', 'Active'],
+          ['34', 'Canvas Cap', 'Accessories', '₱420.00', 'Review']
+        ]
+      },
+      product_variants: {
+        count: 12, columns: ['id', 'product_id', 'size', 'color', 'stock', 'review'],
+        rows: [
+          ['101', '18', '9.5', 'Black', '5', 'Duplicate'],
+          ['102', '18', '9.5', 'Black', '5', 'Duplicate'],
+          ['103', '19', '9', 'Black', '4', 'Duplicate'],
+          ['104', '19', '9', 'Black', '4', 'Duplicate'],
+          ['111', '34', '—', 'Blue', '5', 'Missing size'],
+          ['110', '25', '9', 'Blue', '-1', 'Review stock'],
+          ['112', '28', '8', 'White', '0', 'OK'],
+          ['105', '18', '10', 'Black', '3', 'OK'],
+          ['106', '19', '10', 'Black', '6', 'OK'],
+          ['107', '25', '8', 'Blue', '2', 'OK'],
+          ['108', '28', '9', 'White', '4', 'OK'],
+          ['109', '34', '12', 'Blue', '7', 'OK']
+        ]
+      },
+      sales: {
+        count: 28, columns: ['id', 'product_id', 'quantity', 'total', 'sold_on', 'status'],
+        rows: [
+          ['501', '18', '1', '₱999.00', '2026-10-02', 'Complete'],
+          ['502', '19', '2', '₱3,000.00', '2026-10-03', 'Complete'],
+          ['503', '25', '1', '₱1,500.00', '2026-10-04', 'Complete'],
+          ['504', '34', '1', '₱420.00', '2026-10-04', 'Pending'],
+          ['505', '18', '1', '₱999.00', '2026-10-05', 'Complete']
+        ]
+      },
+      users: {
+        count: 15, columns: ['id', 'display_name', 'email', 'role', 'status'],
+        rows: [
+          ['1', 'Alex Rivera', 'alex@example.test', 'Admin', 'Active'],
+          ['2', 'Jamie Santos', 'jamie@example.test', 'Staff', 'Active'],
+          ['3', 'Taylor Cruz', 'taylor@example.test', 'Staff', 'Active'],
+          ['4', 'Morgan Lee', 'morgan@example.test', 'Staff', 'Inactive'],
+          ['5', 'Casey Reyes', 'casey@example.test', 'Staff', 'Active']
+        ]
+      }
+    };
+
+    const main = projectElement('div', 'database-main');
+    const toolbar = projectElement('div', 'database-toolbar');
+    const browseTab = projectElement('button', 'database-tab is-active', 'Browse');
+    const sqlTab = projectElement('button', 'database-tab', 'SQL checks');
+    browseTab.type = sqlTab.type = 'button';
+    toolbar.append(browseTab, sqlTab);
+
+    const browsePanel = projectElement('div', 'database-browse-panel');
+    const tableHeader = projectElement('div', 'database-table-header');
+    const tableTitle = projectElement('strong', '', 'Table: product_variants');
+    const tableCount = projectElement('span', '', '12 fictional rows');
+    tableHeader.append(tableTitle, tableCount);
+    const tableWrap = projectElement('div', 'database-table-wrap');
+    const records = projectElement('table', 'database-records');
+    const thead = projectElement('thead');
+    const headerRow = projectElement('tr');
+    const tbody = projectElement('tbody');
+    thead.append(headerRow);
+    records.append(thead, tbody);
+    tableWrap.append(records);
+    const tableNote = projectElement('p', 'database-table-note');
+
+    const renderTable = name => {
+      const table = sampleTables[name];
+      tree.querySelectorAll('.database-tree-item').forEach(item => {
+        const selected = item.dataset.table === name;
+        item.classList.toggle('is-selected', selected);
+        item.setAttribute('aria-current', selected ? 'true' : 'false');
+      });
+      tableTitle.textContent = 'Table: ' + name;
+      tableCount.textContent = table.count + ' fictional rows';
+      headerRow.replaceChildren(...table.columns.map(label => projectElement('th', '', label)));
+      tbody.replaceChildren(...table.rows.map(values => {
+        const row = projectElement('tr');
+        values.forEach((value, index) => {
+          const isReview = name === 'product_variants' && index === values.length - 1;
+          const cell = projectElement('td', isReview ? 'database-status-cell' : '', isReview ? '' : value);
+          if (isReview) {
+            const status = value.toLowerCase().replaceAll(' ', '-');
+            cell.append(projectElement('span', 'database-status database-status--' + status, value));
+          }
+          row.append(cell);
+        });
+        return row;
+      }));
+      tableNote.textContent = table.rows.length === table.count
+        ? 'Showing all ' + table.count + ' fictional records from this sample table. No live store records are displayed.'
+        : 'Showing ' + table.rows.length + ' sample records from a fictional ' + table.count + '-row table. No live store records are displayed.';
+    };
+
+    Object.entries(sampleTables).forEach(([name, table]) => {
+      const item = projectElement('button', 'database-tree-item' + (name === 'product_variants' ? ' is-selected' : ''));
+      item.type = 'button';
+      item.dataset.table = name;
+      item.setAttribute('aria-current', name === 'product_variants' ? 'true' : 'false');
+      item.append(projectElement('span', '', '▦ ' + name), projectElement('small', '', table.count));
+      item.addEventListener('click', () => renderTable(name));
+      tree.append(item);
+    });
+    renderTable('product_variants');
+
+    const run = projectElement('button', 'button primary database-run', 'Run sample scan');
+    run.type = 'button';
+    const scanStatus = projectElement('div', 'database-scan-status');
+    scanStatus.hidden = true;
+    scanStatus.setAttribute('aria-live', 'polite');
+    const scanMessage = projectElement('span', 'database-scan-message', 'Ready to review fictional sample rows');
+    const scanTrack = projectElement('div', 'database-scan-track');
+    const scanFill = projectElement('span', 'database-scan-fill');
+    scanTrack.setAttribute('role', 'progressbar');
+    scanTrack.setAttribute('aria-label', 'Sample scan progress');
+    scanTrack.setAttribute('aria-valuemin', '0');
+    scanTrack.setAttribute('aria-valuemax', '100');
+    scanTrack.setAttribute('aria-valuenow', '0');
+    scanTrack.append(scanFill);
+    scanStatus.append(scanMessage, scanTrack);
+
+    const results = projectElement('div', 'database-results');
+    results.hidden = true;
+    results.setAttribute('aria-live', 'polite');
+    results.append(projectElement('span', 'database-results-label', 'SAMPLE SCAN · FICTIONAL ROWS'));
+    const metrics = projectElement('div', 'database-metrics');
+    [['12', 'sample rows reviewed'], ['2', 'duplicate variant groups'], ['6', 'rows flagged to review']].forEach(([value, label]) => {
+      const metric = projectElement('div', 'database-metric');
+      metric.append(projectElement('strong', '', value), projectElement('span', '', label));
+      metrics.append(metric);
+    });
+    results.append(metrics, projectElement('p', '', 'Flags are prompts for a person to review; they do not mean records should be deleted automatically. These are illustrative results, not a live SQL query.'));
+    const scanStages = [
+      [20, 'Loading fictional product-variant rows…'],
+      [48, 'Checking repeated product, size, and color combinations…'],
+      [76, 'Reviewing missing details and stock values…'],
+      [100, 'Sample review complete · 12 rows checked']
+    ];
+    run.addEventListener('click', () => {
+      run.disabled = true;
+      run.classList.add('is-scanning');
+      run.textContent = 'Scanning sample…';
+      results.hidden = true;
+      scanStatus.hidden = false;
+      scanMessage.textContent = scanStages[0][1];
+      scanFill.style.width = '0%';
+      scanTrack.setAttribute('aria-valuenow', '0');
+      scanStages.forEach(([progress, message], index) => {
+        window.setTimeout(() => {
+          scanMessage.textContent = message;
+          scanFill.style.width = progress + '%';
+          scanTrack.setAttribute('aria-valuenow', String(progress));
+          if (index === scanStages.length - 1) {
+            results.hidden = false;
+            run.disabled = false;
+            run.classList.remove('is-scanning');
+            run.textContent = 'Run sample scan again';
+          }
+        }, index * 620);
+      });
+    });
+    browsePanel.append(tableHeader, tableWrap, tableNote, run, scanStatus, results);
+    const sqlPanel = projectElement('div', 'database-sql-panel');
+    sqlPanel.hidden = true;
+    sqlPanel.append(projectElement('div', 'database-table-header', 'SQL checks · review records that may need attention'));
+    const checks = [
+      ['01', 'Find repeated variants', `SELECT product_id, size, color, COUNT(*) AS copies
+FROM product_variants
+GROUP BY product_id, size, color
+HAVING COUNT(*) > 1;`],
+      ['02', 'Find missing variant details', `SELECT id, product_id, size, color
+FROM product_variants
+WHERE size IS NULL OR color IS NULL OR color = '';`],
+      ['03', 'Flag stock values for review', `SELECT id, product_id, stock
+FROM product_variants
+WHERE stock < 0 OR stock IS NULL;`]
+    ];
+    const checksGrid = projectElement('div', 'database-checks-grid');
+    checks.forEach(([number, title, query]) => {
+      const card = projectElement('article', 'database-check-card');
+      const heading = projectElement('div', 'database-check-heading');
+      heading.append(projectElement('span', 'database-check-number', number), projectElement('h4', '', title));
+      const code = projectElement('pre', 'database-query');
+      code.append(projectElement('code', '', query));
+      card.append(heading, code);
+      checksGrid.append(card);
+    });
+    sqlPanel.append(checksGrid);
+    const setTab = showSql => {
+      browsePanel.hidden = showSql;
+      sqlPanel.hidden = !showSql;
+      browseTab.classList.toggle('is-active', !showSql);
+      sqlTab.classList.toggle('is-active', showSql);
+      browseTab.setAttribute('aria-pressed', String(!showSql));
+      sqlTab.setAttribute('aria-pressed', String(showSql));
+    };
+    browseTab.setAttribute('aria-pressed', 'true');
+    sqlTab.setAttribute('aria-pressed', 'false');
+    browseTab.addEventListener('click', () => setTab(false));
+    sqlTab.addEventListener('click', () => setTab(true));
+    main.append(toolbar, browsePanel, sqlPanel);
+    workspaceBody.append(tree, main);
+    workspace.append(topbar, workspaceBody);
+    const note = projectElement('p', 'database-disclaimer', 'Practice interface inspired by database tools. Every record and result here is fictional; this page does not connect to SneakDup or execute SQL.');
+    const storeLink = projectElement('a', 'database-store-link', 'Open the SneakDup website ↗');
+    storeLink.href = projectNotes.sneakdup.live;
+    storeLink.target = '_blank';
+    storeLink.rel = 'noopener noreferrer';
+    practice.append(workspace, note, storeLink);
+    primary.append(practice);
   }
 
   const sidebar = projectElement('aside', 'case-sidebar');
@@ -517,11 +628,11 @@ function openProject(key) {
   project.highlights.forEach(text => list.append(projectElement('li', '', text)));
   highlights.append(list);
   sidebar.append(role, tools, highlights, projectElement('p', 'case-extra', project.extra));
-  layout.append(primary, sidebar);
+  layout.append(primary);
+  if (key !== 'data') layout.append(sidebar);
+  else layout.classList.add('case-layout--database');
   dialogContent.append(introduction, layout);
-  if (key === 'sneakdup') dialogContent.append(createDataQualityLab());
-  dialogContent.append(...projectSections);
-  showGalleryItem(0);
+  if (key !== 'data') showGalleryItem(0);
   presentPreview(dialog, closeDialogButton);
 }
 
@@ -665,24 +776,44 @@ function updateActiveSection() {
 window.addEventListener('scroll', () => { if (!navFrame) { navFrame = true; requestAnimationFrame(updateActiveSection); } }, { passive: true }); updateActiveSection();
 
 const contactForm = document.querySelector('#contact-form');
-let preparedMessage = '';
-contactForm.addEventListener('input', () => { document.querySelector('#draft-actions').hidden = true; preparedMessage = ''; });
-contactForm.addEventListener('submit', event => {
+const contactStatus = document.querySelector('#form-status');
+const contactSubmit = contactForm.querySelector('button[type="submit"]');
+const sendLabel = contactSubmit.textContent;
+contactForm.addEventListener('submit', async event => {
   event.preventDefault();
   const name = contactForm.elements.name.value.trim();
   const email = contactForm.elements.email.value.trim();
   const message = contactForm.elements.message.value.trim();
-  if (!name || !message) { const field = !name ? contactForm.elements.name : contactForm.elements.message; field.setCustomValidity('Please enter more than spaces.'); field.reportValidity(); field.addEventListener('input', () => field.setCustomValidity(''), { once: true }); return; }
-  preparedMessage = 'From: ' + name + ' <' + email + '>\n\n' + message;
-  document.querySelector('#email-draft').href = 'mailto:dustinperrera10@gmail.com?subject=' + encodeURIComponent('Portfolio inquiry from ' + name.replace(/[\r\n]/g, ' ')) + '&body=' + encodeURIComponent(preparedMessage);
-  document.querySelector('#draft-actions').hidden = false;
-  document.querySelector('#form-status').textContent = 'Your draft is ready. Open it in your email app, review it, and send it there.';
-});
-document.querySelector('#copy-message').addEventListener('click', async () => {
-  try { await navigator.clipboard.writeText(preparedMessage); document.querySelector('#form-status').textContent = 'Message copied. Paste it into an email to dustinperrera10@gmail.com.'; }
-  catch { document.querySelector('#form-status').textContent = 'Copy is unavailable in this browser. Select and copy your message from the fields above.'; }
-});
+  const emptyField = !name ? contactForm.elements.name : !email ? contactForm.elements.email : !message ? contactForm.elements.message : null;
+  if (emptyField) {
+    emptyField.setCustomValidity('Please enter more than spaces.');
+    emptyField.reportValidity();
+    emptyField.addEventListener('input', () => emptyField.setCustomValidity(''), { once: true });
+    return;
+  }
 
+  contactSubmit.disabled = true;
+  contactSubmit.textContent = 'Sending…';
+  contactStatus.hidden = false;
+  contactStatus.textContent = 'Sending your message…';
+  const cleanName = name.replace(/[\r\n]/g, ' ');
+  try {
+    const response = await fetch('https://formsubmit.co/ajax/dustinperrera10@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ name, email, _replyto: email, _subject: 'Portfolio inquiry from ' + cleanName, message })
+    });
+    const result = await response.json();
+    if (!response.ok || String(result.success).toLowerCase() === 'false') throw new Error('Form submission failed');
+    contactStatus.textContent = 'Thanks! Your message was sent. I’ll get back to you soon.';
+    contactForm.reset();
+  } catch {
+    contactStatus.textContent = 'The message could not be sent right now. Please email dustinperrera10@gmail.com directly.';
+  } finally {
+    contactSubmit.disabled = false;
+    contactSubmit.textContent = sendLabel;
+  }
+});
 // A sparse code trail follows a mouse pointer and fades without covering controls.
 const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -1040,4 +1171,106 @@ if (careerRoadmap) {
   measureCareerRoadmap(); updateCareerMotion();
 }
 
+// Advance the pinned What I Do story one service at a time as its scroll markers pass.
+(() => {
+  const track = document.querySelector('.service-story-track');
+  if (!track) return;
+  const stage = track.querySelector('.service-story-stage');
+  const markers = [...track.querySelectorAll('[data-service-marker]')];
+  const slides = [...track.querySelectorAll('[data-service-slide]')];
+  const count = stage.querySelector('.service-stage-count');
+  const progress = stage.querySelector('.service-stage-track i');
+  const status = stage.querySelector('.service-stage-status');
+  let activeIndex = 0;
+  let ticking = false;
+  const labels = ['What can I help you build?', 'Business websites?', 'Retail systems?', 'Android applications?', 'Need to improve a website?', 'Connect the tools you use?', 'Keep building after launch?'];
 
+  function setActive(index) {
+    index = Math.max(0, Math.min(slides.length - 1, index));
+    if (index === activeIndex && slides[index].classList.contains('is-active')) return;
+    activeIndex = index;
+    slides.forEach((slide, i) => {
+      const active = i === index;
+      slide.classList.toggle('is-active', active);
+      slide.setAttribute('aria-hidden', String(!active));
+      slide.inert = !active;
+    });
+    count.textContent = `${String(index).padStart(2, '0')} / 06`;
+    progress.style.transform = `scaleX(${index / 6})`;
+    status.textContent = labels[index];
+  }
+
+  function updateFromScroll() {
+    const triggerY = Math.min(window.innerHeight * .62, window.innerHeight - 30);
+    let nextIndex = 0;
+    markers.forEach((marker, i) => {
+      if (marker.getBoundingClientRect().top <= triggerY) nextIndex = i + 1;
+    });
+    setActive(nextIndex);
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(updateFromScroll);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  updateFromScroll();
+})();
+
+// Continuously glide certificate cards in a compact, seamless loop.
+(() => {
+  const viewport = document.querySelector('.certificate-grid--documents');
+  const evidenceSection = viewport?.closest('.evidence-chapter');
+  if (!viewport || !evidenceSection) return;
+
+  const slides = [...viewport.querySelectorAll('.certificate-card')];
+  if (slides.length < 2) return;
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const track = document.createElement('div');
+  track.className = 'certificate-loop-track';
+  const firstSet = document.createElement('div');
+  firstSet.className = 'certificate-loop-set';
+  firstSet.setAttribute('role', 'list');
+  slides.forEach(slide => {
+    slide.setAttribute('role', 'listitem');
+    firstSet.append(slide);
+  });
+  track.append(firstSet);
+  viewport.replaceChildren(track);
+  viewport.classList.add('certificate-grid--loop');
+
+  let duplicateSet = null;
+  if (!reducedMotion.matches) {
+    duplicateSet = firstSet.cloneNode(true);
+    duplicateSet.setAttribute('aria-hidden', 'true');
+    duplicateSet.inert = true;
+    duplicateSet.querySelectorAll('[id]').forEach(element => element.removeAttribute('id'));
+    duplicateSet.querySelectorAll('a').forEach(link => link.tabIndex = -1);
+    track.append(duplicateSet);
+  }
+
+  const updateLoop = () => {
+    if (!duplicateSet) return;
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    const distance = firstSet.getBoundingClientRect().width + gap;
+    if (!distance) return;
+    viewport.style.setProperty('--certificate-loop-distance', `${distance}px`);
+    viewport.style.setProperty('--certificate-loop-duration', `${Math.max(24, distance / 30).toFixed(2)}s`);
+  };
+  if (duplicateSet) {
+    if ('ResizeObserver' in window) new ResizeObserver(updateLoop).observe(viewport);
+    else window.addEventListener('resize', updateLoop);
+    updateLoop();
+  }
+
+  const syncMotion = () => {
+    viewport.classList.toggle('is-running', !reducedMotion.matches && evidenceSection.open && !document.hidden);
+  };
+  evidenceSection.addEventListener('toggle', syncMotion);
+  document.addEventListener('visibilitychange', syncMotion);
+  syncMotion();
+})();
